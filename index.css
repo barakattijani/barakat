@@ -1,0 +1,178 @@
+html,body{
+   background-color: rgb(250, 237, 236);
+   margin-left: 22%;
+   user-select: none;
+}
+
+.main-div{
+    text-align: center;
+    background-color: white;
+    max-width: 300px;
+    border: 4px solid black;
+    padding: 7px 0px 10px 0px;
+    border-radius: 4%;
+    
+}
+
+
+/* responsive */
+@media (max-width: 575px) {
+    .main-div{
+        max-width: none;
+        margin-left: -40%;
+        margin-right: 25%;
+    }
+
+}
+
+
+
+#input-field{
+    padding: 7px 0px 7px 0px;
+    text-align: center;
+    width: 78%;
+    height: 26px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16.4px;
+    background-color: rgb(240, 229, 229);
+    border-radius: 8% 8% 8% 8%;
+    border: none;
+    margin-bottom: 13px;
+}
+
+#add-btn{
+    border-radius: 8% 8% 8% 8%;
+    padding: 7px 0px;
+    width: 80%;
+    background-color: rgb(234, 156, 141);
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16.5px;
+    border:none;
+    max-width: 100%;
+
+}
+
+#add-btn:hover{
+    background-color: #a8764afa;
+    cursor:-webkit-grab;
+}
+
+
+#shopping-list{
+    list-style: none;
+    text-align: start;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+    justify-content: centre;
+    transform: translateX(-8px);
+    box-sizing: border-box;
+
+}
+
+ul li{
+    background-color: #FFFDF8;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    text-align:center;
+    height: 40px;
+    padding: 12px 10px 0px 3px;
+}
+
+
+ul li:nth-child(1),
+ul li:nth-child(2) {
+    flex-basis: calc(46% - 5px);
+}
+
+ul li:nth-child(3),
+ul li:nth-child(4) {
+    flex-basis: calc(46% - 5px);
+
+}
+
+ul li:nth-child(5),
+ul li:nth-child(6) {
+    flex-basis: calc(46% - 5px);
+
+}
+
+ul li:nth-child(7),
+ul li:nth-child(8) {
+    flex-basis: calc(46% - 5px);
+
+}
+
+ul li:nth-child(9),
+ul li:nth-child(10) {
+    flex-basis: calc(46% - 5px);
+
+}
+
+ul li:nth-child(11),
+ul li:nth-child(12) {
+    flex-basis: calc(46% - 5px);
+
+}
+
+ul li:nth-child(13),
+ul li:nth-child(14) {
+    flex-basis: calc(46% - 5px);
+
+}
+
+
+ul li:hover{
+    background-color:  rgb(234, 156, 141);;
+    cursor:-webkit-grab;
+}
+
+/* responsive */
+@media (max-width: 575px) {
+    ul li{
+        transform: translateX(-7px);
+        flex-grow: 0.2;
+    }
+} 
+
+/* surface duo */
+@media (min-width: 540px) and (max-width: 900px) and (orientation: portrait), 
+       (min-width: 675px) and (max-width: 1350px) and (orientation: landscape) {
+    ul li{
+        transform: translateX(4.5px);
+        box-sizing: border-box;
+        max-width: 140px;    
+    }
+}
+
+/* ipad mini */
+@media (min-width: 744px) and (max-width: 768px) and (orientation: portrait) {
+        body{
+            max-width: none;
+            margin-left: 10%;
+            /* margin-right: 25%; */
+        
+    }
+}
+
+/* ipad air */
+@media (min-width: 820px) and (max-width: 834px) and (orientation: portrait) {
+    body{
+        max-width: none;
+        margin-left: 10%;
+    
+}
+}
+
+/* ipad pro */
+@media (min-width: 834px) and (max-width: 1024px) and (orientation: portrait) {
+    body{
+        max-width: none;
+        margin-left: 16%;
+    
+}
+}

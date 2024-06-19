@@ -1,0 +1,43 @@
+{
+    "name": "Add-to-cart",
+    "version": "1.0.0",
+    "description": "An open-source web application for managing tasks and projects",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha --require @babel/register 'tests/**/*.test.js'",
+        "start": "node dist/js/index.js",
+        "build": "npm run clean && babel src/js --out-dir dist/js",
+        "clean": "rimraf dist",
+        "copy-assets": "copyfiles -u 1 src/**/*.{html,css} dist",
+        "compile-js": "babel src/js -d dist/js --presets=@babel/preset-env"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/YourUsername/YourRepository.git"
+    },
+    "author": "barakattijani",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/YourUsername/YourRepository/issues"
+    },
+    "homepage": "https://github.com/YourUsername/YourRepository#readme",
+    "dependencies": {
+        "express": "^4.19.2"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.24.7",
+        "@babel/core": "^7.24.7",
+        "@babel/preset-env": "^7.24.7",
+        "copyfiles": "2.4.1",
+        "rimraf": "^5.0.7",
+        "mocha": "10.4.0",
+        "chai": "5.1.1",
+        "@babel/register": "7.24.6"
+
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env"
+        ]
+    }
+}
