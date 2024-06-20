@@ -2,6 +2,7 @@ html,body{
    background-color: rgb(250, 237, 236);
    margin-left: 22%;
    user-select: none;
+   
 }
 
 .main-div{
@@ -11,12 +12,14 @@ html,body{
     border: 4px solid black;
     padding: 7px 0px 10px 0px;
     border-radius: 4%;
+    margin-top:7%;
     
 }
 
 
 /* responsive */
 @media (max-width: 575px) {
+
     .main-div{
         max-width: none;
         margin-left: -40%;
@@ -133,15 +136,21 @@ ul li:hover{
 
 /* responsive */
 @media (max-width: 575px) {
+   
     ul li{
         transform: translateX(-7px);
         flex-grow: 0.2;
+
     }
+
 } 
 
 /* surface duo */
 @media (min-width: 540px) and (max-width: 900px) and (orientation: portrait), 
        (min-width: 675px) and (max-width: 1350px) and (orientation: landscape) {
+        .main-div{
+            margin-top: 17%;
+        }
     ul li{
         transform: translateX(4.5px);
         box-sizing: border-box;
@@ -153,9 +162,10 @@ ul li:hover{
 @media (min-width: 744px) and (max-width: 768px) and (orientation: portrait) {
         body{
             max-width: none;
-            margin-left: 10%;
-            /* margin-right: 25%; */
-        
+            margin-left: 10%;        
+    }
+    .main-div{
+        margin-top: 43%;
     }
 }
 
@@ -164,7 +174,9 @@ ul li:hover{
     body{
         max-width: none;
         margin-left: 10%;
-    
+}
+.main-div{
+    margin-top: 43%;
 }
 }
 
@@ -175,4 +187,30 @@ ul li:hover{
         margin-left: 16%;
     
 }
+.main-div{
+    margin-top: 43%;
 }
+}
+
+/* iphone xr */
+@media (max-width:414px) {
+    .main-div{
+        margin-top: 70%;
+    }
+}
+
+/* iphone se */
+@media(max-width:375px) {
+    .main-div{
+        margin-top: 39.5%;
+    }
+}
+
+
+/* iphone 14pro max  */
+@media only screen and (min-device-width: 430px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 3) {
+    .main-div{
+        margin-top: 66%;
+    }
+}
+
